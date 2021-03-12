@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(700 , 700);
   background(240);
 }
 
@@ -9,5 +9,5 @@ function draw() {
   } else {
     fill(255, 87, 51);
   }
-  square(mouseX, mouseY, 40, 40);
+  ellipse(mouseX, mouseY, 40, 40);
 }

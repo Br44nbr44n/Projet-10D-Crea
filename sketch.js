@@ -1,13 +1,12 @@
 function setup() {
-  createCanvas(700 , 700);
-  background(240);
+  createCanvas(700, 700, WEBGL);
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill( 33, 93, 120 );
-  } else {
-    fill(255, 87, 51);
-  }
-  ellipse(mouseX, mouseY, 40, 40);
+  background(0);
+  fill(240, 150, 150);
+  rotateX(frameCount * 0.04);
+  rotateY(frameCount * 0.04);
+  box((sin(frameCount/4) * 50) + 250);
+  
 }
